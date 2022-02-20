@@ -1,0 +1,10 @@
+{
+    "appName": "App",
+    "chapter": "Chapter",
+    "addToPlaylist": "Add To Playlist",
+    "settings": "Settings",
+    "playlist": "Playlists",
+    "audioPrefix": "audio",
+    "audioSuffix1": "1",
+    "audioSuffix2": "2"
+}

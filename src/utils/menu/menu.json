@@ -1,0 +1,18 @@
+{
+    "section":
+        {
+            "title": "title",
+            "chapters": [
+                {
+                    "collection": "collection",
+                    "title": "Chapter",
+                    "chapterNum": 1
+                },
+                {
+                    "collection": "collection",
+                    "title": "Chapter",
+                    "chapterNum": 1
+                }
+            ]
+        }
+}
