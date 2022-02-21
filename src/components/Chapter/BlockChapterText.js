@@ -1,7 +1,8 @@
 import React from 'react';
-import {View} from 'react-native';
+import {Text} from 'react-native';
 import gematriya from 'gematriya';
 import TouchableText from './TouchableText';
+import styles from '../../styles/ChapterTextStyles';
 
 class BlockChapterText extends React.Component {
   constructor(props) {
@@ -12,10 +13,12 @@ class BlockChapterText extends React.Component {
 
   render() {
     return (
-      <Text style={this.props.isParagraph ?
-          { flexDirection: 'row-reverse', flexWrap: 'wrap' }
-        :
-          {}}>
+      <Text
+        style={
+          this.props.isParagraph
+            ? { flexDirection: 'row-reverse', flexWrap: 'wrap', ...styles.text}
+            : {}
+        }>
         {this.props.text.map((line, index) => {
           let lineNum = this.props.isHebrew
             ? gematriya(index + 1, {punctuate: false})

@@ -21,7 +21,7 @@ class Chapter extends React.Component {
     super(props);
     this.state = {
       isLoaded: false,
-      hebrewOnly: false,
+      hebrewOnly: true,
       blockText: false,
       selectedIndex: 0,
       isPaused: true,
@@ -57,7 +57,7 @@ class Chapter extends React.Component {
               this.state.blockText ? (
                 <BlockChapterDisplay
                   isParagraph={true}
-                  hebrewOnly={this.state.hebrewOnly}
+                  hebrewOnly={true}
                   hebrewText={this.state.hebrew}
                   englishText={this.state.english}
                   selectedIndex={this.state.selectedIndex}
@@ -65,7 +65,7 @@ class Chapter extends React.Component {
                 />
               ) : (
                 <InlineChapterDisplay
-                  hebrewOnly={this.state.hebrewOnly}
+                  hebrewOnly={true}
                   hebrewText={this.state.hebrew}
                   englishText={this.state.english}
                   selectedIndex={this.state.selectedIndex}
@@ -399,7 +399,7 @@ class Chapter extends React.Component {
       this.setState({
         number: file.chapterNumber,
         hebrew: file.hebrewText,
-        english: file.englishText,
+        english: '',
         splitsAshk: file.splitsAshk,
         splitsSeph: file.splitsSeph,
         audioUri: audioURI,

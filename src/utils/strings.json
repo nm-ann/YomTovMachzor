@@ -1,10 +1,15 @@
 {
-    "appName": "App",
+    "appName": "מחזור ימים טובים",
     "chapter": "Chapter",
     "addToPlaylist": "Add To Playlist",
     "settings": "Settings",
+    "settingsTitle": "Settings",
     "playlist": "Playlists",
     "audioPrefix": "audio",
-    "audioSuffix1": "1",
-    "audioSuffix2": "2"
+    "audioSuffix1": "ashk",
+    "audioSuffix2": "seph",
+    "maariv": "Maariv",
+    "shach": "Shacharit",
+    "musaf": "Mussaf",
+    "mincha": "Mincha"
 }

@@ -1,8 +1,17 @@
 [
     {
-        "title": "Specific Setting",
-        "settingsName": "specific",
-        "leftText": "S",
-        "rightText": "s"
+        "title": "Layout",
+        "subtitle": "Block text or a line-based layout.",
+        "settingsName": "block",
+        "leftIcon": "align-justify",
+        "rightIcon": "stream"
+    },
+    {
+        "title": "Nusach",
+        "subtitle": "Ashkenazis or Sepharadit",
+        "settingsName": "ashk",
+        "leftText": "A",
+        "rightText": "S",
+        "disabled": false
     }
 ]

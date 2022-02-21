@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, FlatList, Button, TouchableOpacity, Dimensions} from 'react-native';
+import { View, Text, FlatList, Button, TouchableOpacity, Dimensions } from 'react-native';
 import gematriya from 'gematriya';
 import * as strings from '../utils/strings.json';
 import FontAwesomeButton from '../components/FontAwesomeButton';
@@ -14,7 +14,7 @@ class PlaylistMenu extends React.Component {
   constructor(props) {
     super(props);
     this.buttonWidth = 75;
-    const {width} = Dimensions.get('window');
+    const { width } = Dimensions.get('window');
 
     this.state = {
       modalVisible: false,
@@ -68,7 +68,7 @@ class PlaylistMenu extends React.Component {
                 }}
                 onPress={() => {
                   this.closeModal();
-                  this.props.navigation.setParams({editMode: false});
+                  this.props.navigation.setParams({ editMode: false });
                 }}
               />
               <FontAwesomeButton
@@ -99,32 +99,25 @@ class PlaylistMenu extends React.Component {
             </Text>
           ) : (
             <FlatList
-              columnWrapperStyle={styles.buttonContainer}
               data={this.props.route.params.chapterList.chapters}
-              numColumns={this.state.numColumns}
               keyExtractor={(item, index) => index.toString()}
-              key={this.state.numColumns}
-              renderItem={({item, index}) => {
+              renderItem={({ item, index }) => {
                 return (
-                  <View style={{
-                      width: this.buttonWidth,
-                      padding: 5,
-                    }}
-                    key={index}>
+                  <View key={index}>
                     <FontAwesomeButton
                       onPress={() => {
                         if (!this.props.route.params.editMode) {
                           this.props.navigation.navigate('Chapter', {
-                            title: strings.chapter,
+                            collection: item.collection,
+                            title: item.title,
                             chapters: this.props.route.params.chapterList
                               .chapters,
-                            chapterNum: item,
-                            titleNum: item,
+                            chapterNum: item.chapterNum,
                           });
                         }
                       }}
-                      text={item.toString()}
-                      buttonStyle={styles.buttonContent}
+                      text={item.title}
+                      buttonStyle={styles.buttonContentTitle}
                       textStyle={styles.buttonText}
                     />
                     {this.props.route.params.editMode ? (
@@ -217,11 +210,11 @@ class PlaylistMenu extends React.Component {
   }
 
   openModal() {
-    this.setState({modalVisible: true});
+    this.setState({ modalVisible: true });
   }
 
   closeModal() {
-    this.setState({modalVisible: false});
+    this.setState({ modalVisible: false });
   }
 
   componentWillUnmount() {

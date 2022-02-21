@@ -6,6 +6,7 @@ import Menu from './src/screens/Menu';
 import MainScreenHeader from './src/components/Header/MainScreenHeader';
 import ChapterMenu from './src/screens/ChapterMenu';
 import SectionMenu from './src/screens/SectionMenu';
+import TitleMenu from './src/screens/TitleMenu';
 import Chapter from './src/screens/Chapter';
 import ChapterHeader from './src/components/Header/ChapterHeader';
 import AddToPlaylist from './src/screens/AddToPlaylist';
@@ -38,6 +39,7 @@ class App extends React.Component {
                 headerTitleAlign: 'center',
                 headerTitle: () => <MainScreenHeader />,
                 headerTintColor: colors.secondary,
+                headerBackTitle: '',
               };
             }}
           />
@@ -50,6 +52,7 @@ class App extends React.Component {
               headerTitleStyle: styles.headerText,
               headerTitleAlign: 'center',
               headerTintColor: colors.secondary,
+              headerBackTitle: '',
             })}
           />
           <Screen
@@ -61,6 +64,19 @@ class App extends React.Component {
               headerTitleStyle: styles.headerText,
               headerTitleAlign: 'center',
               headerTintColor: colors.secondary,
+              headerBackTitle: '',
+            })}
+          />
+          <Screen
+            name="TitleMenu"
+            component={TitleMenu}
+            options={({ route }) => ({
+              title: `${route.params.title}`,
+              headerStyle: styles.header,
+              headerTitleStyle: styles.headerText,
+              headerTitleAlign: 'center',
+              headerTintColor: colors.secondary,
+              headerBackTitle: '',
             })}
           />
           <Screen
@@ -72,6 +88,7 @@ class App extends React.Component {
               headerTitleStyle: styles.headerText,
               headerTitleAlign: 'center',
               headerTintColor: colors.secondary,
+              headerBackTitle: '',
             })}
           />
           <Screen
@@ -85,6 +102,7 @@ class App extends React.Component {
               headerTitleStyle: styles.headerText,
               headerTitleAlign: 'center',
               headerTintColor: colors.secondary,
+              headerBackTitle: '',
             })}
           />
           <Screen
@@ -96,6 +114,7 @@ class App extends React.Component {
               headerTitleStyle: styles.headerText,
               headerTitleAlign: 'center',
               headerTintColor: colors.secondary,
+              headerBackTitle: '',
             })}
           />
           <Screen
@@ -108,6 +127,7 @@ class App extends React.Component {
                 headerTitleStyle: styles.headerText,
                 headerTitleAlign: 'center',
                 headerTintColor: colors.secondary,
+                headerBackTitle: '',
               };
             }}
           />

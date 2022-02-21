@@ -1,9 +1,10 @@
 import AsyncStorage from '@react-native-community/async-storage';
 
 export async function getSettings() {
-  let [specific] = await Promise.all([getSpecificSetting()]);
+  let [block, ashk] = await Promise.all([getLineSetting(), getAshkSetting()]);
   return {
-    specific: specific,
+    block: block,
+    ashk: ashk,
   };
 }
 
@@ -23,8 +24,16 @@ async function getSetting(field, dfault) {
   return setting;
 }
 
-export async function getSpecificSetting() {
-  return getSetting('specific', true);
+export async function getLineSetting() {
+  return getSetting('block', true);
+}
+
+export async function getAshkSetting() {
+  return getSetting('ashk', true);
+}
+
+export async function getAudioRepeatSetting() {
+  return getSetting('repeat', false);
 }
 
 export async function changeSetting(field, value) {

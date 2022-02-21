@@ -1,17 +1,27 @@
 [
     {
-        "title": "chapter",
-        "iconName": "cog",
-        "nextScreen": "ChapterMenu"
+        "title": "maariv",
+        "iconName": "candle",
+        "nextScreen": "Chapter"
     },
     {
-        "title": "chapter",
-        "iconName": "cog",
-        "nextScreen": "SectionMenu"
+        "title": "shach",
+        "iconName": "weather-sunset-up",
+        "nextScreen": "TitleMenu"
+    },
+    {
+        "title": "musaf",
+        "iconName": "campfire",
+        "nextScreen": "TitleMenu"
+    },
+    {
+        "title": "mincha",
+        "iconName": "weather-sunset-down",
+        "nextScreen": "TitleMenu"
     },
     {
         "title": "playlist",
-        "iconName": "music",
+        "iconName": "playlist-music",
         "nextScreen": "SectionMenu"
     },
     {
