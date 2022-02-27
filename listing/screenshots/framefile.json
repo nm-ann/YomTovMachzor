@@ -1,0 +1,70 @@
+{
+    "device_frame_version": "latest",
+    "default": {
+        "background": "./background_ipad.png",
+        "title": {
+            "color": "#ffffff"
+        },
+        "padding": "50x200",
+        "stack_title": true,
+        "title_min_height": "30%"
+    },
+    "data": [
+        {
+            "filter": "menu",
+            "keyword": {
+                "text": "Browse",
+                "font_size": 150,
+                "font_weight": 800
+            },
+            "title":{
+                "text": "The Shabbat prayers",
+                "font_size": 149
+            }
+        },
+        {
+            "filter": "chapter",
+            "keyword": {
+                "text": "Learn",
+                "font_size": 150,
+                "font_weight": 800
+            },
+            "title": {
+                "text": "How to read the prayers\nwith the proper Nusach",
+                "font_size": 149
+            }
+        },
+        {
+            "filter": "settings",
+            "keyword": {
+                "text": "Personalize",
+                "font_size": 150,
+                "font_weight": 800
+            },
+            "title": {
+                "text": "Display and audio setting\naccording to your preferences",
+                "font_size": 149
+            }
+        },
+        {
+            "filter": "iphone_big",
+            "background": "./background_iphone_big.png",
+            "use_platform": "IOS"
+        },
+        {
+            "filter": "iphone_small",
+            "background": "./background_iphone_small.png",
+            "use_platform": "IOS"
+        },
+        {
+            "filter": "ipad",
+            "background": "./background_ipad.png",
+            "use_platform": "IOS"
+        },
+        {
+            "filter": "android",
+            "background": "./background_android.png",
+            "use_platform": "ANDROID"
+        }
+    ]
+}
