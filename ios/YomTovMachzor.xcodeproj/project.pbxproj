@@ -73,6 +73,8 @@
 		668F334727C40FFF002900AA /* supp_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 668F32D627C40BC0002900AA /* supp_1.json */; };
 		668F334827C40FFF002900AA /* supp_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 668F32D727C40BC0002900AA /* supp_2.json */; };
 		668F334927C40FFF002900AA /* supp_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 668F32CB27C40BBF002900AA /* supp_3.json */; };
+		668F335327C4230A002900AA /* YomTovMachzorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668F335227C4230A002900AA /* YomTovMachzorUITests.swift */; };
+		668F335E27C423B3002900AA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668F335D27C423B3002900AA /* SnapshotHelper.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8765F852E4C643D0AA7566DB /* Ezra SIL SR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 321FAFD040544175A778F9D0 /* Ezra SIL SR.ttf */; };
 		9270A2CA6A8FE12D0875E18B /* libPods-YomTovMachzor-YomTovMachzorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D2394BB996E506D1E2C27B /* libPods-YomTovMachzor-YomTovMachzorTests.a */; };
@@ -80,6 +82,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = YomTovMachzor;
+		};
+		668F335527C4230B002900AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
@@ -168,6 +177,10 @@
 		668F330327C40BCC002900AA /* supp_2_ashk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = supp_2_ashk.mp3; path = ../src/assets/audio/supp_2_ashk.mp3; sourceTree = "<group>"; };
 		668F330427C40BCC002900AA /* supp_1_seph.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = supp_1_seph.mp3; path = ../src/assets/audio/supp_1_seph.mp3; sourceTree = "<group>"; };
 		668F330527C40BCC002900AA /* shach_2_seph.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shach_2_seph.mp3; path = ../src/assets/audio/shach_2_seph.mp3; sourceTree = "<group>"; };
+		668F335027C4230A002900AA /* YomTovMachzorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YomTovMachzorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		668F335227C4230A002900AA /* YomTovMachzorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YomTovMachzorUITests.swift; sourceTree = "<group>"; };
+		668F335427C4230A002900AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		668F335D27C423B3002900AA /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		68E7FA4698F94124B4DF2287 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		73CAE1313D864C9FA22258C0 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		7584FF004FB94E7CA6144817 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
@@ -200,6 +213,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				12A4BD8EFCD8BC65E5B179B4 /* libPods-YomTovMachzor.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		668F334D27C4230A002900AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +351,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		668F335127C4230A002900AA /* YomTovMachzorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				668F335227C4230A002900AA /* YomTovMachzorUITests.swift */,
+				668F335427C4230A002900AA /* Info.plist */,
+				668F335D27C423B3002900AA /* SnapshotHelper.swift */,
+			);
+			path = YomTovMachzorUITests;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +374,7 @@
 				13B07FAE1A68108700A75B9A /* YomTovMachzor */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* YomTovMachzorTests */,
+				668F335127C4230A002900AA /* YomTovMachzorUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				AD138763F3AF75998F1E0720 /* Pods */,
@@ -359,6 +390,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* YomTovMachzor.app */,
 				00E356EE1AD99517003FC87E /* YomTovMachzorTests.xctest */,
+				668F335027C4230A002900AA /* YomTovMachzorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -420,12 +452,31 @@
 			productReference = 13B07F961A680F5B00A75B9A /* YomTovMachzor.app */;
 			productType = "com.apple.product-type.application";
 		};
+		668F334F27C4230A002900AA /* YomTovMachzorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 668F335927C4230B002900AA /* Build configuration list for PBXNativeTarget "YomTovMachzorUITests" */;
+			buildPhases = (
+				668F334C27C4230A002900AA /* Sources */,
+				668F334D27C4230A002900AA /* Frameworks */,
+				668F334E27C4230A002900AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				668F335627C4230B002900AA /* PBXTargetDependency */,
+			);
+			name = YomTovMachzorUITests;
+			productName = YomTovMachzorUITests;
+			productReference = 668F335027C4230A002900AA /* YomTovMachzorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -434,6 +485,10 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					668F334F27C4230A002900AA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 				};
 			};
@@ -452,6 +507,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* YomTovMachzor */,
 				00E356ED1AD99517003FC87E /* YomTovMachzorTests */,
+				668F334F27C4230A002900AA /* YomTovMachzorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -532,6 +588,13 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				8765F852E4C643D0AA7566DB /* Ezra SIL SR.ttf in Resources */,
 				205F08931B364EAFBA4D6B72 /* StamAshkenazCLM.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		668F334E27C4230A002900AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,6 +766,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		668F334C27C4230A002900AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668F335327C4230A002900AA /* YomTovMachzorUITests.swift in Sources */,
+				668F335E27C423B3002900AA /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -710,6 +782,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* YomTovMachzor */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		668F335627C4230B002900AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* YomTovMachzor */;
+			targetProxy = 668F335527C4230B002900AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -772,6 +849,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42KR8B64BB;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = YomTovMachzor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -783,7 +861,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vayavinu.YomTovMachzor;
 				PRODUCT_NAME = YomTovMachzor;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -799,6 +877,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42KR8B64BB;
 				INFOPLIST_FILE = YomTovMachzor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -809,11 +888,75 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vayavinu.YomTovMachzor;
 				PRODUCT_NAME = YomTovMachzor;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		668F335727C4230B002900AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 42KR8B64BB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = YomTovMachzorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vayavinu.YomTovMachzorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YomTovMachzor;
+			};
+			name = Debug;
+		};
+		668F335827C4230B002900AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 42KR8B64BB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = YomTovMachzorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vayavinu.YomTovMachzorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YomTovMachzor;
 			};
 			name = Release;
 		};
@@ -957,6 +1100,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		668F335927C4230B002900AA /* Build configuration list for PBXNativeTarget "YomTovMachzorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				668F335727C4230B002900AA /* Debug */,
+				668F335827C4230B002900AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

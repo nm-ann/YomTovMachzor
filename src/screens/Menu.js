@@ -21,11 +21,12 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <View>
+      <View accessible={Platform.OS == 'ios' ? false : true}>
         {!this.state.isLoaded ? (
           <ActivityIndicator size="large" />
         ) : (
           <FlatList
+            accessible={Platform.OS == 'ios' ? false : true}
             style={styles.container}
             data={mainMenu.default}
             keyExtractor={(item, index) => index.toString()}

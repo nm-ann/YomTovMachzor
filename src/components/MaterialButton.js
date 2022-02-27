@@ -8,7 +8,9 @@ class MaterialButton extends React.Component {
     const iconMargin = this.props.text ? {marginRight: 10} : {marginRight: 0};
     /* <TouchableOpacity delayPressIn={0} onPress={this.props.onPress}> */
     return (
-      <TouchableOpacity delayPressIn={0} onPress={this.props.onPress}>
+      <TouchableOpacity
+        delayPressIn={0}
+        onPress={this.props.onPress}>
         <View style={{...styles.button, ...this.props.buttonStyle}}>
           {this.props.iconName ? (
             <Icon
