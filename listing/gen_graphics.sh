@@ -19,7 +19,7 @@ if [ -z $COLOR ]; then
     COLOR="\#deb744"
 fi
 
-# echo "Creating background images"
+# echo "CREATING BACKGROUND IMAGES"
 convert -size 1080x2160 xc:$COLOR screenshots/background_android.png 
 convert -size 1284x2778 xc:$COLOR screenshots/background_iphone_big.png 
 convert -size 1242x2208 xc:$COLOR screenshots/background_iphone_small.png
@@ -31,14 +31,13 @@ do ext="${file##*.}"; filename="${file%.*}";
 cp "$file" "${filename}_small.${ext}";
 mv "$file" "${filename}_big.${ext}";
 done
-# screenshots/ios/*_iphone screenshots/ios/iphone_small
 
-echo "Creating screenshots"
+echo "CREATING SCREENSHOTS"
 cd screenshots
 fastlane frameit
 cd ..
 
-echo "Making android icons"
+echo "MAKING ANDROID ICONS"
 mkdir icons
 mkdir icons/android
 mkdir icons/ios
@@ -57,7 +56,7 @@ convert $IMG -resize 72x72 icons/android/drawable-hdpi/$imgName.png
 convert $IMG -resize 48x48 icons/android/drawable-mdpi/$imgName.png
 convert $IMG -resize 36x36 icons/android/drawable-ldpi/$imgName.png
 
-echo "Making ios icons"
+echo "MAKING IOS ICONS"
 convert $IMG -resize 20x20! icons/ios/$imgName.png-20.png
 convert $IMG -resize 22x22! icons/ios/$imgName.png-22.png
 convert $IMG -resize 29x29! icons/ios/$imgName.png-29.png
@@ -80,5 +79,7 @@ convert $IMG -resize 180x180! icons/ios/$imgName.png-180.png
 convert $IMG -resize 196x196! icons/ios/$imgName.png-196.png
 convert $IMG -resize 1024x1024! icons/ios/$imgName.png-1024.png
 
+COLOR_GREEN='\033[0;32m'
+COLOR_DEFAULT='\033[0m'
 echo -e "${COLOR_GREEN}FINISHED${COLOR_DEFAULT}"
 exit 0
