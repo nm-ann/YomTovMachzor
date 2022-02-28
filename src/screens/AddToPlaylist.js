@@ -49,6 +49,7 @@ class AddToPlaylist extends React.Component {
               style={{
                 width: '80%',
                 borderBottomColor: colors.tertiary,
+                color: colors.tertiary,
                 borderBottomWidth: 1,
                 padding: 0,
               }}

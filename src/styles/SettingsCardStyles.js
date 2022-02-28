@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     elevation: 2, // Android
   },
   settingsTitle: {
-    color: colors.tertiary,
+    color: colors.primary,
     paddingTop: 20,
     paddingLeft: 20,
     fontSize: 20,
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     paddingLeft: 20,
     paddingBottom: 20,
-    color: colors.tertiary,
+    color: colors.primary,
     fontSize: 15,
   },
   buttonArea: {
@@ -42,10 +42,10 @@ const styles = StyleSheet.create({
     fontSize: 40,
   },
   buttonSelected: {
-    backgroundColor: colors.primary,
+    backgroundColor: colors.tertiaryDark,
   },
   buttonDeselected: {
-    backgroundColor: colors.tertiaryDark,
+    backgroundColor: colors.tertiary,
   },
 });
 

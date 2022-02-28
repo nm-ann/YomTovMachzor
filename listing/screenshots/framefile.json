@@ -64,6 +64,7 @@
         {
             "filter": "android",
             "background": "./background_android.png",
+            "padding": "50x100",
             "use_platform": "ANDROID"
         }
     ]
