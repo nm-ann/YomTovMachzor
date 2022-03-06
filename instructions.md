@@ -64,10 +64,13 @@ Each menu item (which will become a button on the home screen) is comprised of 3
 
 - The icon name should be left blank (ie. iconName: "",) and will be modified by the developer.
 
-- The next screen tells the app which screen to show when a user clicks on the button. There are 3 options for the next screen: ChapterMenu, TitleMenu, and SectionMenu. 
+- The next screen tells the app which screen to show when a user clicks on the button. There are 4 options for the next screen: Chapter, ChapterMenu, TitleMenu, and SectionMenu. 
+  - Chapter should be used when the next screen should be a specific chaper. This is only used when an intermediate menu isn't needed. For example, in the Yom Tov Machzor App, Maariv's next screen is set to Chapter because there is only 1 Maariv chapter.
   - ChapterMenu should be used when the next screen should be a list of chapters, each represented as a number. For example, Tehillim uses a ChapterMenu to display the 150 different chapters.
   - TitleMenu should be used when the next screen is a list of titles, not just numbers. For example, the Mincha screen may contain the Ashrei, Shemoneh Esrei, and Aleinu, so it should use a title menu.
   - SectionMenu should be used when the next screen is a secondary menu. For example, in the Tehillim app, the next screen for Books is a SectionMenu because it will show a list of books, which in turn show a list of chapters. Because the buttons in the Book screen take the user to another menu, instead of a screen with text, a SectionMenu is used.
+
+  There is also one additional option for the next screen, called SettingsMenu, which is reserved to be used only by the settings button.
 
   # Chapter Configuration
 The apps's chapter configuration is stored in a file called menu.json and has the following format (example is from the Yom Tov Machzor App):

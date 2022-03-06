@@ -87,7 +87,7 @@ convert $IMG -resize 87x87! icons/ios/$imgName-87.png
 convert $IMG -resize 88x88! icons/ios/$imgName-88.png
 convert $IMG -resize 120x120! icons/ios/$imgName-120.png
 convert $IMG -resize 152x152! icons/ios/$imgName-152.png
-convert $IMG -resize 167x167! icons/ios/$imgName167.png
+convert $IMG -resize 167x167! icons/ios/$imgName-167.png
 convert $IMG -resize 172x172! icons/ios/$imgName-172.png
 convert $IMG -resize 180x180! icons/ios/$imgName-180.png
 convert $IMG -resize 196x196! icons/ios/$imgName-196.png
