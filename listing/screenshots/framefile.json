@@ -2,8 +2,11 @@
     "device_frame_version": "latest",
     "default": {
         "background": "./background_ipad.png",
+        "keyword": {
+            "color": "#CB9634"
+        },
         "title": {
-            "color": "#ffffff"
+            "color": "#CB9634"
         },
         "padding": "50x200",
         "stack_title": true,
