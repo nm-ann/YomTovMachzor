@@ -7,6 +7,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontFamily: 'Ezra SIL SR',
   },
+  smallText: {
+    fontSize: 20,
+  },
+  bigText: {
+    fontSize: 30,
+  },
   pressed: {
     color: 'lightgray',
   },

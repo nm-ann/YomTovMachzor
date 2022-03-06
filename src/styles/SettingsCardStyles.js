@@ -42,10 +42,10 @@ const styles = StyleSheet.create({
     fontSize: 40,
   },
   buttonSelected: {
-    backgroundColor: colors.tertiaryDark,
+    backgroundColor: colors.tertiary,
   },
   buttonDeselected: {
-    backgroundColor: colors.tertiary,
+    backgroundColor: colors.tertiaryDark,
   },
 });
 

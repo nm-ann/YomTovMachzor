@@ -10,6 +10,7 @@ class BlockChapterDisplay extends React.Component {
           isParagraph={this.props.isParagraph}
           isHebrew={true}
           text={this.props.hebrewText}
+          showSmallText={this.props.showSmallText}
           selectedIndex={this.props.selectedIndex}
           onSelect={this.props.onSelect}
         />
@@ -20,6 +21,7 @@ class BlockChapterDisplay extends React.Component {
             isParagraph={this.props.isParagraph}
             isHebrew={false}
             text={this.props.englishText}
+            showSmallText={this.props.showSmallText}
             selectedIndex={this.props.selectedIndex}
             onSelect={this.props.onSelect}
           />

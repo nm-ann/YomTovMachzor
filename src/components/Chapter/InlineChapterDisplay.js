@@ -30,6 +30,7 @@ class InlineChapterDisplay extends React.Component {
                   index={index}
                   lineNum={lineNum}
                   text={line}
+                  showSmallText={this.props.showSmallText}
                   selected={isSelected}
                   onSelect={this.selectText}
                   style={{textAlign: 'right'}}
@@ -49,6 +50,7 @@ class InlineChapterDisplay extends React.Component {
                   index={lineIndex}
                   lineNum={lineNum}
                   text={line}
+                  showSmallText={this.props.showSmallText}
                   selected={isSelected}
                   onSelect={this.selectText}
                   style={

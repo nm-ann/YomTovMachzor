@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   mainScreenHeaderText: {
     fontFamily: 'StamAshkenazCLM',
     fontSize: 30,
-    color: colors.secondary,
+    color: colors.tertiary,
   },
   chapterHeaderContainer: {
     display: 'flex',

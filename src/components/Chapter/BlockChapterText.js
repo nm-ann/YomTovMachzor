@@ -29,6 +29,7 @@ class BlockChapterText extends React.Component {
               index={index}
               lineNum={lineNum}
               text={line}
+              showSmallText={this.props.showSmallText}
               selected={isSelected}
               onSelect={this.selectText}
               style={

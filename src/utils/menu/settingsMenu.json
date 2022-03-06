@@ -4,7 +4,8 @@
         "subtitle": "Block text or a line-based layout.",
         "settingsName": "block",
         "leftIcon": "align-justify",
-        "rightIcon": "stream"
+        "rightIcon": "stream",
+        "disabled": false
     },
     {
         "title": "Nusach",
@@ -12,6 +13,22 @@
         "settingsName": "ashk",
         "leftText": "A",
         "rightText": "S",
+        "disabled": false
+    },
+    {
+        "title": "Text Size",
+        "subtitle": "Regular or Large Font",
+        "settingsName": "smallText",
+        "leftText": "t",
+        "rightText": "T",
+        "disabled": false
+    },
+    {
+        "title": "Background Audio",
+        "subtitle": "Allow audio to play in the background",
+        "settingsName": "bg",
+        "leftIcon": "volume-off",
+        "rightIcon": "volume-up",
         "disabled": false
     }
 ]

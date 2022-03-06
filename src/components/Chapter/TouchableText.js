@@ -35,6 +35,7 @@ class TouchableText extends React.Component {
             ? styles.selected
             : styles.unselected,
           styles.text,
+          this.props.showSmallText ? styles.smallText : styles.bigText,
           this.props.style,
         ]}>
         {`${this.props.text} `}

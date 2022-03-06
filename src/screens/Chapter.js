@@ -21,12 +21,14 @@ class Chapter extends React.Component {
     super(props);
     this.state = {
       isLoaded: false,
-      hebrewOnly: true,
+      hebrewOnly: false,
       blockText: false,
       selectedIndex: 0,
       isPaused: true,
       isSeeking: false,
       isBookmarked: false,
+      dontAllowBackgroundAudio: false,
+      showSmallText: false,
       isPortrait: ScreenUtils.isPortrait(),
       shouldRepeat: false,
       speed: 1.0,
@@ -57,17 +59,19 @@ class Chapter extends React.Component {
               this.state.blockText ? (
                 <BlockChapterDisplay
                   isParagraph={true}
-                  hebrewOnly={true}
+                  hebrewOnly={this.state.hebrewOnly}
                   hebrewText={this.state.hebrew}
                   englishText={this.state.english}
+                  showSmallText={this.state.showSmallText}
                   selectedIndex={this.state.selectedIndex}
                   onSelect={this.selectIndex}
                 />
               ) : (
                 <InlineChapterDisplay
-                  hebrewOnly={true}
+                  hebrewOnly={this.state.hebrewOnly}
                   hebrewText={this.state.hebrew}
                   englishText={this.state.english}
+                  showSmallText={this.state.showSmallText}
                   selectedIndex={this.state.selectedIndex}
                   onSelect={this.selectIndex}
                 />
@@ -86,7 +90,7 @@ class Chapter extends React.Component {
                 this.player = ref;
               }} // Store reference
               audioOnly={true}
-              // playInBackground={true}
+              playInBackground={!this.state.dontAllowBackgroundAudio}
               ignoreSilentSwitch={'ignore'}
               paused={this.state.isPaused}
               onProgress={this.progressUpdateIndex}
@@ -130,7 +134,10 @@ class Chapter extends React.Component {
           paused={this.state.isPaused}
           isPortrait={this.state.isPortrait}
           speed={this.state.speed}
-          updateSpeed={(newSpeed) => this.setState({ speed: newSpeed })}
+          updateSpeed={(newSpeed) => {
+            this.setState({ speed: newSpeed });
+            SettingsUtils.changeSetting('speed', newSpeed);
+          }}
           onBackward={() => {
             if (this.state.isLoaded) {
               let nextChapter = SeekChapter.findPrevChapter(
@@ -305,6 +312,9 @@ class Chapter extends React.Component {
       hebrewOnly: settings.hebrew,
       blockText: settings.block,
       ashk: settings.ashk,
+      dontAllowBackgroundAudio: settings.bg,
+      showSmallText: settings.smallText,
+      speed: settings.speed,
     });
   }
 
@@ -399,7 +409,7 @@ class Chapter extends React.Component {
       this.setState({
         number: file.chapterNumber,
         hebrew: file.hebrewText,
-        english: '',
+        english: this.state.hebrewOnly ? '' : file.englishText,
         splitsAshk: file.splitsAshk,
         splitsSeph: file.splitsSeph,
         audioUri: audioURI,
