@@ -13,7 +13,7 @@ Example:
 ```
 
 # File Naming
-files should be named in format `[section]_[type]_[number].[extension]`. For example, the first hebrew mincha text file should be named `mincha_hebrew_1.txt`. A split file's type should be its nusach. For example, the first ashkenazis mincha file should be name `mincha_ashk_1.txt`.
+files should names should be lowercase and in the format `[section]_[type]_[number].[extension]`. For example, the first hebrew mincha text file should be named `mincha_hebrew_1.txt`. A split file's type should be its nusach. For example, the first ashkenazis mincha file should be name `mincha_ashk_1.txt`.
 
 The type of app does not play a role in the naming conventions. The first mincha text file for a shabbos app should be named _exactly_ the same as the first mincha text file for a yom tov app. Only the most immediate category (ie type of tefillah, sefer of the torah, etc.) should be used in naming.
 

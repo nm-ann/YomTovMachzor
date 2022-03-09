@@ -30,6 +30,9 @@ for file in screenshots/ios/*_iphone.png;
 do ext="${file##*.}"; filename="${file%.*}";
 cp "$file" "${filename}_small.${ext}";
 mv "$file" "${filename}_big.${ext}";
+convert "${filename}_small.${ext}" -resize 1242x2208 "${filename}_small.${ext}"
+convert "${filename}_big.${ext}" -resize 1284x2778 "${filename}_big.${ext}"
+
 done
 
 echo "CREATING SCREENSHOTS"

@@ -44,6 +44,11 @@
                 "chapterNum": 6
             },
             {
+                "collection": "supp",
+                "title": "Shabbat Additions",
+                "chapterNum": 1
+            },
+            {
                 "collection": "shach",
                 "title": "Hallel",
                 "chapterNum": 7
@@ -77,6 +82,16 @@
                 "collection": "musaf",
                 "title": "Hodaah",
                 "chapterNum": 4
+            },
+            {
+                "collection": "supp",
+                "title": "Shabbat Additions",
+                "chapterNum": 2
+            },
+            {
+                "collection": "supp",
+                "title": "Korban Hayom",
+                "chapterNum": 3
             }
         ]
     },
